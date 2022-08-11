@@ -1,0 +1,15 @@
+<div>
+<%= render 'shared/flash_message' %>
+</div>
+
+<strong>title</strong>
+<p><%= @book.title %></p>
+<strong>Body</strong>
+<p><%= @book.body %></p>
+
+<!--編集画面へ遷移するリンクを設定-->
+<%= link_to "edit", edit_book_path(@book.id) %>
+<!--削除画面へ遷移するリンクを設定-->
+
+<!--indexに戻る-->
+<%= link_to "Back", books_path %>
